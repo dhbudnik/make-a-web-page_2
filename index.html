@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html >
+<!-- this way I leave notes-->
+<!--<head> element do no appears in the page-->
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <!-- The <title> element normally sets the name of the browser tab (but in this example codepen's title overrides the title I set) -->
+    <title>SUMMARY</title> 
+  </head>
+
+  <body>
+    <!--headings go from h1 to h6-->
+    <h1>INDEX</h1>
+     <div class="index">
+      <ol>
+          <li><a href="#stage0"><h2>STAGE 0: concepts</h2></a>
+            <ul>
+              <li><a href="#stage0.1"><h4>WWW:</h4></a></li>
+              <li><a href="#stage0.2"><h4>HTML:</h4></a></li>
+              <li><a href="#stage0.3"><h4>COMPUTERS ARE STUPID:</h4></a></li>
+              <li><a href="#stage0.4"><h4>INLINE VS BLOCK ELEMENTS:</h4></a></li>
+            </ul>  
+          </li>
+
+          <li><a href="#stage1a"><h2>STAGE 1: work session 1</h2></a>
+            <ul>
+              <li><a href="#stage1a.1"><h4>LANGUAGES:</h4></a></li>
+              <li><a href="#stage1a.2"><h4>PAGE & STRUCTURE:</h4></a></li>
+              <li><a href="#stage1a.3"><h4>TREES:</h4></a></li>
+              <li><a href="#stage1a.4"><h4>BOXES:</h4></a></li>
+            </ul>  
+          </li>
+            
+          <li><a href="#stage1b"><h2>STAGE 1: work session 2</h2></a>
+            <ul>  
+              <li><a href="#stage1b.1"><h4>CSS: CASCADING STYLE SHEETS</h4></a></li>
+              <li><a href="#stage1b.2"><h4>DRY: DON'T REPEAT YOURSELF</h4></a></li>
+              <li><a href="#stage1b.3"><h4>SELECTORS:</h4></a></li>
+              <li><a href="#stage1b.4"><h4>THE BOX MODEL:</h4></a></li>
+              <li><a href="#stage1b.5"><h4>BOX POSITIONING:</h4></a></li>
+              <li><a href="#stage1b.6"><h4>CODE, TEST & REFINE:</h4></a></li>
+            </ul>
+          </li>  
+      </ol>      
+    </div>
+    <br>
+    <br>
+    <br>
+
+  <div class="lesson"> 
+    
+      <h1 id="stage0">STAGE 0: concepts</h1>
+
+        <div class="level2">
+          <h2 id="stage0.1"> WWW:</h2>
+          Invented in 1990s it conects about 30 billion people.<br>
+          A web page is a text doc written in HTML language that a browser can read.<br><br>
+        </div>
+        
+        <div class="level2">
+          <h2 id="stage0.2">HTML:</h2>
+          HTML are made of:<br>
+          
+          <div class="flex" style="display: flex;">
+            <div class="half">
+              <ul>
+                <li>text content (what you see)</li>
+                <li>markups (what it looks like)</li>
+                <li>references to other docs (images, videos, etc)</li>
+              </ul> 
+            </div>  
+         
+              <img class="image" src="images/earth.png" alt="ups">
+          </div>   
+         
+              
+          <br><br>
+          links to other pages: 
+          <a href="http://www.google.com">example</a><br><br>
+        </div>
+          
+        <div class="level2">  
+          <h2 id="stage0.3">COMPUTERS ARE STUPID:</h2>
+          Details are important when programming. Computers do <em>exactly</em> what you tell them to do. This means that precission and organization are needed in the HTML (or any other programming language) text so it can be understood by the computer.<br><br>
+        </div>
+        
+        <div class="level2">  
+          <h2 id="stage0.4">INLINE vs BLOCK ELEMENTS</h2>
+          Block elements go in a <em>invisible box.</em><br><br><br>
+        </div>
+  </div>
+
+       
+  <div class="lesson"> 
+    
+      <h1 id="stage1a">STAGE 1: work session 1</h1>
+
+        <div class="level2">
+          <h2 id="stage1a.1">LANGUAGES:</h2>  
+          We will start with 3 languages:<br><br>
+
+          <ul>
+              <li>HTML: for the structure</li>
+              <li>CSS: for the style</li>
+              <li>JavaScript: for the interactive components</li>
+          </ul>  
+
+            <br><br>
+        </div>
+
+        <div class="level2">    
+          <h2 id="stage1a.2">PAGE & STRUCTURE</h2>
+          HTML defines the content and structure of the page.
+          <br><br>
+          HTML elements are the building rectangular blocks of a page. They describe the content so the browser knows how to show them.
+          <br><br>
+          Each rectangular block or box is an element created by a <em>opening tag</em> and a <em>closing tag</em>. We can find (or not) <em>content</em> between the tags. Tags can have <em>attributes</em> with <em>values</em>.
+           <br><br>
+          The Document Objective Model (<b>DOM</b>) defines the structure of a document and how can it be accessed and manipulated. 
+           <br><br>
+          HTML <em>building blocks</em> create the structure of a page. As we will see, pages follow a tree structure where we can find brunches in the form of elements inside other elements.
+              <br><br>
+          Some HTML elements are:<br>
+          <ul>
+              <li><b>head</b>: contains metadata like <em>title</em> or <em>style</em></li>
+              <li><b>body</b>: it contains the content of the page</li>
+              <li><b>headings</b>: they go from h1 to h6</li>
+              <li><b>paragraphs</b>: defines paragraphs</li>
+              <li><b>a elements</b>: they link an <em>attribute value</em> to a <em>link text</em></li>
+              <li><b>images</b>: they have the src attribute that has the address of the image</li>
+              <li><b>ordered list</b>: ol</li>
+              <li><b>unordered list</b>: ul</li>
+              <li><b>list elements:</b> li</li>
+              <li>All elements are rectangulars</li>
+              <li>All the text of a page is deep in the code</li>
+          </ul>         
+         </div>
+
+         <div class="level2"> 
+          <h2 id="stage1a.3">TREES</h2>
+          Pages follow a brunching structure. This means that we can find elements inside other elements and so on. <em>tags</em> creates the elements in the tree<br>
+            <!--At Google Chrome I can see the code with the Developer's Tool-->
+           <img class="image" src="images/tree.png" alt="ups"><br><br>
+         </div>
+         
+         <div class="level2">
+          <h2 id="stage1a.4">BOXES</h2>
+            Pages are made of <em>boxes</em>.<br>
+            The concept of breaking a page in boxes is to <em>boxify</em><br><br>
+            <div class="box example">
+              div is a block tag for doing boxes</div><br>
+            <img class="image" src="images/box.png " alt="ups">
+         </div>
+         
+  </div>   
+    
+  <div class="lesson"> 
+       
+      <h1 id="stage1b">STAGE 1: work session 2</h1> 
+
+        <div class="level2">
+          <h2 id="stage1b.1">CSS: CASCADING STYLE SHEETS</h2>
+            CSS is the language that allow us to give style to the elements of the HTML.
+            <br>
+            <ul>
+              <li>In the "head", a style sheet must be linked so the document can access it.</li>
+              <li>A stong concept in CSS is not to repeat the code. For this, we use <em><b>selectors</b></em>.</li>
+            </ul>
+              
+                <br><br>
+        </div>  
+
+        <div class="level2">
+          <h2 id="stage1b.2">DRY: DON'T REPEAT YOURSELF</h2>
+            
+            <ul>
+              <li>Avoiding unnecesary repetition makes cleaner codes</li>
+              <li>Repetition is a waste: code must be mantained, so repetition is a potential source for <em>bugs</em></li>
+              <li>Repetition calls automatization</li>
+              <li>Repetition makes the code harder to understand</li>
+            </ul>
+              
+                <br><br>
+        </div>  
+
+        <div class="level2">
+          <h2 id="stage1b.3">SELECTORS</h2>
+            Selectors can be <b>Tags</b> or <b>Classes</b>.<br><br>
+
+            <ul>
+              <li>Tag Selector Example: p{}</li>
+              <li> Class Selector Example: .class{<em>attributes</em>}</li>
+            </ul>
+            <br>
+            Some examples of selectors that we use in this code to avoid repetition are:<br><br>
+            <ul>
+                <li>class selector <em>level2</em></li>
+                <li>class selector <em>image</em></li>
+                <li>tag selector <em>um</em></li>
+
+            </ul>  
+              
+            <br><br>
+        </div>
+
+        <div class="level2">  
+          <h2 id="stage1b.4">THE BOX MODEL</h2>
+            HTML elements are boxes with 4 components:
+            <br>
+
+            <img class="image" src="images/box_model.png" alt="ups">
+
+            <br><br>
+            For getting the right size we can use 2 techniques:<br>
+
+            <ul>
+              <li>box sizing with percentages % </li>
+              <li>set the <b>box-sizing</b> attribute to <b>border-box</b> for every element:<br>
+              </li>
+            </ul> 
+             <br><br>
+        </div>
+
+        <div class="level2">
+          <h2 id="stage1b.5">BOX POSITIONING</h2> 
+
+            <ul>
+              <li>DIVS are block elements that by default take the width of the entire page.</li>
+              <li>display:flex; will let divs appear next to each other.</li>
+            </ul>  
+                <br><br>
+        </div>
+       
+        <div class="level2"> 
+          <h2 id="stage1b.6">CODE, TEST & REFINE</h2>
+          <ol>
+            <li>Look for boxes</li>
+            <li>Look for repeated styles</li>
+            <li>Write the html</li>
+            <li>Apply styles (<span class="big">BIGGEST</span> to <span class="small">smallest</span>)</li>
+            <li>Fix things</li>
+          </ol>  
+            <br><br>
+        </div> 
+  
+    <br>    
+  </div> 
+  </body>
+</html>

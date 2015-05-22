@@ -1,0 +1,66 @@
+* {
+   /*outline: 1px solid blue !important;*/
+   
+   margin: 0 auto;
+
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -ms-box-sizing: border-box;
+   box-sizing:border-box;
+}
+
+body{
+	font-family: monospace;
+	margin: 0 auto;
+	max-width: 800px;
+}
+
+ul{
+	list-style-type: square;
+}
+
+
+.lesson{
+	background-color: rgb(97, 97, 97);
+	border-radius: 20px;
+	color: white;
+	padding: 20px;
+	margin: 10px auto;
+}
+
+.level2{
+	background-color: white;
+	padding: 14px;
+	margin: 15px auto;
+	border-radius: 10px;
+	color: black;
+}
+
+.image{
+
+	max-height: 170px;
+	max-width: 170px;
+	margin-left: 0px;
+
+}
+
+.half{
+	max-width: 60%;
+	margin-left: 0;
+}
+
+
+
+flex.style{
+	display: flex;
+}
+
+.big{
+	font-size: 20px;
+}
+
+.small{
+	font-size: 9px;
+}
+
+
